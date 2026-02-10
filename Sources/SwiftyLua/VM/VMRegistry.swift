@@ -40,7 +40,7 @@ internal class VMRegistry {
 
   // MARK: - Public Class Properties
 
-  public static var shared: VMRegistry = { VMRegistry() }()
+    nonisolated(unsafe) public static let shared: VMRegistry = { VMRegistry() }()
 
 
   // MARK: - Private Properties
